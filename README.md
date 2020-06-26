@@ -1,3 +1,19 @@
+This is a hacked JSONassert
+==========
+
+skyscreamer does not support java 9+ module systems yet, we provide this hacked version of JSONassert package for java 9+ applications.
+This repo is published to the Nexus-BIP public and snapshot repo.
+
+Usage
+-------
+
+        <dependency>
+            <groupId>no.ssb.org.skyscreamer</groupId>
+            <artifactId>jsonassert</artifactId>
+            <version>1.5.2-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+
 JSONassert
 ==========
 
@@ -105,7 +121,7 @@ org.json
 This implementation uses a clean-room implementation of the org.json
 library implemented for the Android system, released under the Apache 2.0 license. See
 [com.vaadin.external.google:android-json](http://search.maven.org/#artifactdetails%7Ccom.vaadin.external.google%7Candroid-json%7C0.0.20131108.vaadin1%7Cjar)
-That jar does **not** include the org.json.JSONString interface, so a new implementation of that interface is added to this source.
+That jar does **not** include the org.skyscreamer.jsonassert.JSONString interface, so a new implementation of that interface is added to this source.
 
 Resources
 ---------
