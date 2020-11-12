@@ -10,7 +10,7 @@
 
     <groupId>no.ssb.org.skyscreamer</groupId>
     <artifactId>jsonassert</artifactId>
-    <version>1.5.2</version>
+    <version>1.5.3-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>JSONassert</name>
@@ -24,11 +24,13 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <scm>
         <connection>scm:git:git@github.com:skyscreamer/JSONassert.git</connection>
         <developerConnection>scm:git:git@github.com:skyscreamer/JSONassert.git</developerConnection>
         <url>git@github.com:skyscreamer/JSONassert.git</url>
     </scm>
+
     <developers>
         <developer>
             <id>carterpage</id>
@@ -106,7 +108,6 @@
         </extensions>
     </build>
 
-
     <profiles>
         <profile>
             <id>coverage</id>
@@ -125,7 +126,7 @@
                     <plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
-                        <version>0.8.5</version>
+                        <version>0.8.6</version>
                         <executions>
                             <execution>
                                 <id>prepare-agent</id>
@@ -144,6 +145,7 @@
                 </plugins>
             </build>
         </profile>
+
         <profile>
             <id>ssb-bip</id>
             <repositories>
@@ -156,6 +158,11 @@
                 </repository>
             </repositories>
             <distributionManagement>
+                <repository>
+                    <id>ssb-bip-releases</id>
+                    <name>SSB Nexus Releases</name>
+                    <url>https://nexus.prod-bip-ci.ssb.no/repository/maven-releases/</url>
+                </repository>
                 <snapshotRepository>
                     <id>ssb-bip-snapshots</id>
                     <name>SSB Snapshot Repository</name>

@@ -35,7 +35,7 @@ jobs:
       - task: MavenAuthenticate@0
         displayName: 'Maven authenticate'
         inputs:
-          mavenServiceConnections: 'mvnSsbBipPublic, mvnSsbBipSnapshots'
+          mavenServiceConnections: 'mvnSsbBipPublic, mvnSsbBipReleases, mvnSsbBipSnapshots'
       #Maven caching to speed up pipeline build time
       - task: Cache@2
         displayName: Cache Maven local repo
