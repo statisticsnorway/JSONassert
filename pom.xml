@@ -106,7 +106,6 @@
         </extensions>
     </build>
 
-
     <profiles>
         <profile>
             <id>coverage</id>
@@ -144,6 +143,7 @@
                 </plugins>
             </build>
         </profile>
+
         <profile>
             <id>ssb-bip</id>
             <repositories>
