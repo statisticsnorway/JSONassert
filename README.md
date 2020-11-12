@@ -10,7 +10,7 @@ Usage
         <dependency>
             <groupId>no.ssb.org.skyscreamer</groupId>
             <artifactId>jsonassert</artifactId>
-            <version>1.5.2-SNAPSHOT</version>
+            <version>1.5.2</version>
             <scope>test</scope>
         </dependency>
 
